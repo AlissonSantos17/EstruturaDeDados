@@ -1,5 +1,6 @@
-"""def fat(n):
-    if n == 0:
+def fib(n):
+    if (n == 1 or n == 2):
         return 1
-    return n * fat(n - 1)
-fat(3)"""
+    return fib(n - 1) + fib(n - 2)
+
+print(fib(10))
