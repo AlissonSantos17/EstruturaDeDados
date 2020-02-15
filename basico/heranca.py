@@ -13,12 +13,17 @@ class Transporte():
     def getPreco(self):
         return self.preco
 
-'''
-class Carro(Transporte):
-    def __init__(self, nome, preco, seguro, precoSeguro):
-        Transporte
-'''
 
-t = Transporte('Fusca', 500, 3278.56)
-print(t.getNome())
-print(t.getNome())
+class Carro(Transporte):
+    def __init__(self, nome, peso, preco, precoSeguro):
+        Transporte.__init__(self, nome, peso, preco)
+        self.precoSeguro = precoSeguro
+    
+    def getPrecoSeguro(self):
+        return self.precoSeguro
+
+carro = Carro('Fusca', 300.78, 3500.00, 800)
+print(carro.getNome())
+print(carro.getPeso())
+print(carro.getPeso())
+print(carro.getPrecoSeguro())
