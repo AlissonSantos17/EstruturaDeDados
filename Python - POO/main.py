@@ -1,4 +1,4 @@
-import carro, moto, veiculo
+import carro, moto, veiculo, pessoa
 
 punto_branco = carro.Carro('Branco', 'flex', 1.0, 4)
 punto_branco.ligar()
